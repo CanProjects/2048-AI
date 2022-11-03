@@ -1,0 +1,118 @@
+html, body {
+    height:100%;
+    background-color: #118ab2;
+    text-align: center;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#topSpacing {
+    height : 100px;
+    text-align : center;
+    font-size : 4em;
+    font-weight: bolder;
+    color: white;
+    display: inline-block;
+}
+
+#game {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    background :rgba(187, 173, 160,0);
+    display:inline-block;
+    border-radius: 10px;
+    z-index: 2000;
+    position: relative;
+}
+
+.rowBlock {
+    width: 470px;
+    height: 106.25px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.tile {
+    /*background-color: rgba(238, 228, 218, 0.35); */
+    height: 106.25px;
+    width: 106.25px;
+    border-radius: 5px;
+    font-size: 50px; 
+    font-weight: bold;
+    position:relative;
+    opacity: 100%;
+}
+
+.tilePlaceHolder {
+    background-color: rgba(238, 228, 218, 0.35); 
+    height: 106.25px;
+    width: 106.25px;
+    border-radius: 5px;
+    font-size: 50px; 
+    font-weight: bold;
+    position:relative;
+    opacity: 100%;
+}
+
+#buttonDiv {
+    width: 500px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#newGameBut {
+    background-color: #eb9748;
+    border: none;
+    color: white;
+    opacity: 1.0;
+    transition: opacity 0.5s;
+}
+
+#newGameBut:hover {
+    opacity: 0.9;
+    
+}
+
+#newGameBut:focus {
+    box-shadow: none;
+}
+
+#undoBut {
+    background-color: #eb9748;
+    border: none;
+    color: white;
+    opacity: 1.0;
+    transition: opacity 0.5s;
+    margin-right: 15px;
+}
+
+#undoBut:hover {
+    opacity: 0.9;
+    
+}
+
+#undoBut:focus {
+    box-shadow: none;
+}
+
+#gameBackground {
+    height: 500px;
+    width: 500px;
+    margin-left: -500px;
+    
+    border-radius: 10px;
+    display:inline-block;
+    position: absolute;
+    
+}
+
+@keyframes spawned {
+    from {box-shadow:0;}
+    to {box-shadow: 0px 0px 10px 10px;}
+} 
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="ourStyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="2.ico">
+    <title>Bootleg2048</title>
+</head>
+
+<body>
+
+    <div class='' id='topSpacing'>BOOTLEG 2048</div>
+
+    <div class='d-flex flex-row-reverse' id='buttonDiv'>
+        <button type='button' class='btn btn-primary btn-lg' id='newGameBut'>New Game</button>
+        <button type='button' class='btn btn-primary btn-lg' id='undoBut'>Undo Move (1 max)</button>
+    </div>
+
+    <div id='game'>
+        <div class='rowBlock d-flex justify-content-between'>
+            <div class='tile d-flex align-items-center justify-content-center' id='0'></div>
+            <div class='tile d-flex align-items-center justify-content-center' id='1'></div>
+            <div class='tile d-flex align-items-center justify-content-center' id='2'></div>
+            <div class='tile d-flex align-items-center justify-content-center' id='3'></div>
+        </div>
+        <div class='rowBlock d-flex justify-content-between'>
+            <div class='tile d-flex align-items-center justify-content-center' id='4'></div>
+            <div class='tile d-flex align-items-center justify-content-center' id='5'></div>
+            <div class='tile d-flex align-items-center justify-content-center' id='6'></div>
+            <div class='tile d-flex align-items-center justify-content-center' id='7'></div>
+
+        </div>
+        <div class='rowBlock d-flex justify-content-between'>
+            <div class='tile d-flex align-items-center justify-content-center' id='8'></div>
+            <div class='tile d-flex align-items-center justify-content-center' id='9'></div>
+            <div class='tile d-flex align-items-center justify-content-center' id='10'></div>
+            <div class='tile d-flex align-items-center justify-content-center' id='11'></div>
+
+        </div>
+        <div class='rowBlock d-flex justify-content-between'>
+            <div class='tile d-flex align-items-center justify-content-center' id='12'></div>
+            <div class='tile d-flex align-items-center justify-content-center' id='13'></div>
+            <div class='tile d-flex align-items-center justify-content-center' id='14'></div>
+            <div class='tile d-flex align-items-center justify-content-center' id='15'></div>
+        </div>
+    </div>
+
+    <div id='gameBackground'>
+        <div class='rowBlock d-flex justify-content-between'>
+            <div class='tilePlaceHolder d-flex align-items-center justify-content-center'></div>
+            <div class='tilePlaceHolder d-flex align-items-center justify-content-center'></div>
+            <div class='tilePlaceHolder d-flex align-items-center justify-content-center'></div>
+            <div class='tilePlaceHolder d-flex align-items-center justify-content-center'></div>
+        </div>
+        <div class='rowBlock d-flex justify-content-between'>
+            <div class='tilePlaceHolder d-flex align-items-center justify-content-center'></div>
+            <div class='tilePlaceHolder d-flex align-items-center justify-content-center'></div>
+            <div class='tilePlaceHolder d-flex align-items-center justify-content-center'></div>
+            <div class='tilePlaceHolder d-flex align-items-center justify-content-center'></div>
+
+        </div>
+        <div class='rowBlock d-flex justify-content-between'>
+            <div class='tilePlaceHolder d-flex align-items-center justify-content-center'></div>
+            <div class='tilePlaceHolder d-flex align-items-center justify-content-center'></div>
+            <div class='tilePlaceHolder d-flex align-items-center justify-content-center'></div>
+            <div class='tilePlaceHolder d-flex align-items-center justify-content-center'></div>
+
+        </div>
+        <div class=' rowBlock d-flex justify-content-between'>
+            <div class='tilePlaceHolder d-flex align-items-center justify-content-center'></div>
+            <div class='tilePlaceHolder d-flex align-items-center justify-content-center'></div>
+            <div class='tilePlaceHolder d-flex align-items-center justify-content-center'></div>
+            <div class='tilePlaceHolder d-flex align-items-center justify-content-center'></div>
+        </div>
+    </div>
+
+    <!-- <form id='gridForm'>
+        <label for='giveArray'>Directional Input</label>
+        <input type="text" id='giveArray'>
+        <button id='gridGive'>Submit</button>
+    </form> -->
+
+    <div class="d-inline-flex flex-row justify-content-center input-group" style="opacity: 0;">
+        <form id='gridForm' class='form-row'>
+            <label for='giveLoc' class='col-lg-2'>Location: </label>
+            <input type="text" id='giveLoc' class="form-control col-lg-2">
+            <label for='giveVal' class='col-lg-2'>Value: </label>
+            <input type="text" id='giveVal' class="form-control col-lg-2">
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
